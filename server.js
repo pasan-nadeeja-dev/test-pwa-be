@@ -39,7 +39,7 @@ app.post('/subscribe', (req, res) => {
 // test server using GET
 app.get('/get-id', (req, res) => {
   res.status(200).json({
-    "message": "success"
+    "message": "success deployed"
   })
 })
 

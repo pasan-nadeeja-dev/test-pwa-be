@@ -36,6 +36,13 @@ app.post('/subscribe', (req, res) => {
   res.status(201).json({});
 });
 
+// test server using GET
+app.get('/get-id', (req, res) => {
+  res.status(200).json({
+    "message": "success"
+  })
+})
+
 // Endpoint for sending push notifications
 app.post('/send-push', (req, res) => {
   const { message, title } = req.body;
